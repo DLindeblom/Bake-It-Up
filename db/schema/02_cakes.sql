@@ -8,5 +8,5 @@ CREATE TABLE cakes (
   description VARCHAR(100) NOT NULL,
   price INTEGER  NOT NULL DEFAULT 0,
   posted_date TIMESTAMP NOT NULL DEFAULT NOW(),
-  cake_status VARCHAR(20) NOT NULL DEFAULT "Available"
+  cake_status VARCHAR(20) NOT NULL DEFAULT 'Available'
 );
