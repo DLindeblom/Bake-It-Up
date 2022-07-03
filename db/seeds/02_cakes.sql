@@ -1,4 +1,4 @@
-INSER INTO cakes (user_id, cake_photo_url, title, description, price)
+INSERT INTO cakes (user_id, cake_photo_url, title, description, price)
 VALUES
 ( 1,'https://images.unsplash.com/photo-1627834377411-8da5f4f09de8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1001&q=80','Macarron Birthday Cake', 'Yellow Macarron',90),
 
