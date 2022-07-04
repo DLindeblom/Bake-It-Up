@@ -73,6 +73,34 @@
                   <a href="/buyer-main-page"><button>SEE ALL CAKES</button></a>
               </div>
           </div>
+
+          <div>
+            <% for(let cake in cakes) { %>
+              <div class="cake-display">
+                <div class="fav-icon">
+                  <i class="fa-solid fa-heart"></i>
+                </div>
+                <div class="cake-photo">
+                  <img class="cake-photo" src='https://www.littlesweetbaker.com/wp-content/uploads/2017/11/german-chocolate-cake-1-1.jpg' alt="">
+                </div>
+                <div class="cake-info">
+                  <p> <h3> <%= cake.title %> </h3> </p>
+                  <p> <h5><%= cake.description %> </h5> </p>
+                  <p class="price"><%= cake.price %> </p> 
+
+                </div>
+                <div class="status-contact">
+                  <p class="cake-status">cake_status</p>
+                  <form class="contact-seller" action="mailto: <%= cake.user_email %> " method="POST>
+                    <label> Contact Seller </label>
+                    <input type ="submit" />
+                  <button class="contact-seller-btn"> Contact Seller</button>
+                </div>
+              </div>
+              </div>
+            <% } %>
+
+          </div>
       </section>
   </body>
   <!-- insert header from _footer -->
