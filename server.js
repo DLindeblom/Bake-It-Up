@@ -46,16 +46,11 @@ const buyerPage = require("./routes/buyer-main-page")
 // Home page
 app.use("/", homePage(db))
 app.use("/cakes", buyerPage(db) )
+
 // Warning: avoid creating more routes in this file!
 // Separate them into separate routes files (see above).
 
-app.get("/", (req, res) => {
-  res.render("welcome-page");
-});
 
-app.get("/buyer-main-page", (req, res) => {
-  res.render("buyer-main-page");
-});
 
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);

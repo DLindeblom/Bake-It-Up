@@ -6,5 +6,9 @@ module.exports = (db) => {
     res.render("buyer-main-page")
   })
 
+  router.get("/favs", (req, res) => {
+    res.render("buyer-fav-page")
+  })
+
   return router;
 }
