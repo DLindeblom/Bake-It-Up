@@ -8,3 +8,13 @@ module.exports = (db) => {
 
   return router;
 }
+
+
+// move filterItems function  below to appropriate file
+
+/* function filterItems(arr, query) {
+  return arr.filter(function(element) {
+  return element.toLowerCase().indexOf(query.toLowerCase()) !== -1;
+  })
+  }
+ */
