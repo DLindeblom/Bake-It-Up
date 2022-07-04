@@ -1,10 +1,10 @@
 INSERT INTO cakes (user_id, cake_photo_url, title, description, price)
 VALUES
-( 1,'https://images.unsplash.com/photo-1627834377411-8da5f4f09de8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1001&q=80','Macarron Birthday Cake', 'Yellow Macarron',90),
+( 1,'https://images.unsplash.com/photo-1622621746668-59fb299bc4d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=633&q=80','Strawberry Cheesecake', 'Strawberry Cheesecake makw with all fresh ingredient',90),
 
-( 1,'https://images.unsplash.com/photo-1622896784083-cc051313dbab?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80', 'Trio Graduation Combo'  ,'A combo of 3 cakes for your graduation party',200),
+( 1,'https://assets.bonappetit.com/photos/5b9965be60d00151f019a31a/1:1/w_2560%2Cc_limit/tiramisu-layer-cake-with-mascarpone-mousse-slice.jpg', 'Tiramisu layer'  ,'Tiramisu Cake with fresh fruits',200),
 
-( 2, 'https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1050&q=80', 'Dripped Coco Cake'  , 'Fresh dripping chocolate cake',120 );
+( 2, 'https://www.littlesweetbaker.com/wp-content/uploads/2017/11/german-chocolate-cake-1-1.jpg', 'Dripped Coco Cake'  , 'Fresh dripping chocolate cake adding fruits on top',120 );
 
 
 
