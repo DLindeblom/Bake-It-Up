@@ -51,7 +51,6 @@ app.use("/cakes", buyerPage(db) )
 // Separate them into separate routes files (see above).
 
 
-
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);
 });
