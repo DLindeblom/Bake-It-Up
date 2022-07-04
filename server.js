@@ -43,13 +43,13 @@ const homePage = require("./routes/main-page")
 // Note: mount other resources here, using the same pattern above
 
 // Home page
-app.use("/", homePage(db))
+app.use("/", homePage(db));
 // Warning: avoid creating more routes in this file!
 // Separate them into separate routes files (see above).
 
-app.get("/", (req, res) => {
+/* app.get("/", (req, res) => {
   res.render("welcome-page");
-});
+}); */
 
 app.get("/buyer-main-page", (req, res) => {
   res.render("buyer-main-page");
