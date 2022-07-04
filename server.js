@@ -37,6 +37,7 @@ app.use(express.static("public"));
 
 
 const homePage = require("./routes/main-page")
+const buyerPage = require("./routes/buyer-main-page")
 // Mount all resource routes
 
 
@@ -44,6 +45,7 @@ const homePage = require("./routes/main-page")
 
 // Home page
 app.use("/", homePage(db))
+app.use("/cakes", buyerPage(db) )
 // Warning: avoid creating more routes in this file!
 // Separate them into separate routes files (see above).
 
