@@ -41,12 +41,15 @@ app.use(express.static("public"));
 const homePage = require("./routes/main-page");
 const buyerPage = require("./routes/buyer-main-page");
 const cakeForm = require("./routes/sell-a-cake-form");
+const login = require("./routes/login")
 // Mount all resource routes
 
-// Note: mount other resources here, using the same pattern above
+// Note: mount other resources here, using the same pattern aboves
 
 // Home page
+
 app.use("/", homePage(db));
+app.use("/login", login())
 app.use("/cakes", buyerPage(db));
 app.use("/form", cakeForm(db));
 
