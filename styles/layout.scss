@@ -1,6 +1,5 @@
 // See: https://sass-lang.com/
-
-body,
+.home a body,
 html {
   margin: 0;
 }
@@ -11,6 +10,7 @@ html {
   right: 0;
   left: 0;
   background-color: #fef1df;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -263,6 +263,7 @@ section {
 }
 div.cake-display {
   background-color: #fef1df;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   margin: 1rem 1rem 2rem 2rem;
   border-radius: 2rem;
   border: 1px solid #f4d9b4;
@@ -437,11 +438,11 @@ p.price {
 
 .fa-heart {
   font-size: 50px;
-  color: #5985ca;
+  color: #a0c3f4;
 }
 .fa-heart:hover {
   font-size: 55px;
-  color: #d988a7;
+  color: #f4a0c3;
 }
 
 form.contact-seller {

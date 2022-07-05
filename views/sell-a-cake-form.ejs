@@ -72,22 +72,21 @@
               <h2> Sell Your Cake </h2>
               <form action="/cakes" method="POST">
                 <div> <h3> To sell your cake, please fill the form below </h3></div>
-
+<div class="form-center">
                 <!-- CAKE_PHOTO_URL -->
                 <div class="form-group">
-                  <label for="cake_photo_url">Photo:</label>
+                  <label for="cake_photo_url">Photo URL</label>
                   <input
                     class="form-control"
                     type="cake_photo_url"
                     name="cake_photo_url"
-                    placeholder=" url cake photo"
                     required
                   />
                 </div>
 
                 <!-- TITLE -->
                 <div class="form-group">
-                  <label for="title">Title:</label>
+                  <label for="title">Title</label>
                   <input
                     class="form-control"
                     type="title"
@@ -98,7 +97,7 @@
 
                 <!-- DESCRIPTION -->
                 <div class="form-group">
-                  <label for="title">Description:</label>
+                  <label for="title">Description</label>
                   <input
                     class="form-control"
                     type="description"
@@ -109,7 +108,7 @@
 
                   <!-- PRICE -->
                   <div class="form-group">
-                    <label for="price">Price:</label>
+                    <label for="price">Price</label>
                     <input
                       class="form-control"
                       type="price"
@@ -118,7 +117,7 @@
                       required
                     />
                   </div>
-
+                </div>
                 <!-- SUBMIT BUTTON -->
                 <button class="submit-button" type="submit">CAKE IT UP</button>
               </form>
