@@ -58,7 +58,7 @@
 <body>
 
     <body>
-<!-- product section start here  -->
+<!-- SHOW ALL CAKES SECTION START HERE  -->
     <section class="cakes-container">
       <div class="heading">
           <h1> Check Out All Of Our Cakes</h1>
@@ -92,12 +92,15 @@
 
           </div>
 
+          <!-- CAKE STATUS AND CONTACT SELLER SECTION -->
+            <!-- cake_status -->
           <div class="status-contact">
             <button action="/fav" method="POST" class="cake-status"> <%= cakes[cake].cake_status %> </button>
 
+            <!-- contact seller button -->
             <a href="mailto: <%= cakes[cake].email %>">
             <button class="contact-seller-btn"> Contact Seller</button>
-          </a>
+            </a>
           </div>
         </div>
       </div>
