@@ -22,6 +22,7 @@ module.exports = (db) => {
 
   router.get("/favs", (req, res) => {
 
+    // const userID = req.session
     getFavCakes(2).then((result) => {
 
       const templateVars = { cakes: result };
