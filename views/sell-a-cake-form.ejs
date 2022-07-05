@@ -69,11 +69,59 @@
         <section class="sell-a-cake-form">
 
           <div class="form-container">
-              <h2> Let's Sell Your Cake </h2>
-              <p> Cakes are special. Every birthday, every celebration ends with something sweet, a cake, and people remember. It's all about the memories. Let's us be apart of your happiness. </p>
-              <div class="home-btn">
-                  <a href="/cakes"><button>SEE ALL CAKES</button></a>
-              </div>
+              <h2> Sell Your Cake </h2>
+              <form action="/cakes" method="POST">
+                <div> <h3> To sell your cake, please fill the form below </h3></div>
+
+                <!-- CAKE_PHOTO_URL -->
+                <div class="form-group">
+                  <label for="cake_photo_url">Photo:</label>
+                  <input
+                    class="form-control"
+                    type="cake_photo_url"
+                    name="cake_photo_url"
+                    placeholder=" url cake photo"
+                    required
+                  />
+                </div>
+
+                <!-- TITLE -->
+                <div class="form-group">
+                  <label for="title">Title:</label>
+                  <input
+                    class="form-control"
+                    type="title"
+                    name="title"
+                    required
+                  />
+                </div>
+
+                <!-- DESCRIPTION -->
+                <div class="form-group">
+                  <label for="title">Description:</label>
+                  <input
+                    class="form-control"
+                    type="description"
+                    name="description"
+                    required
+                  />
+                </div>
+
+                  <!-- PRICE -->
+                  <div class="form-group">
+                    <label for="price">Price:</label>
+                    <input
+                      class="form-control"
+                      type="price"
+                      name="price"
+                      placeholder=""
+                      required
+                    />
+                  </div>
+
+                <!-- SUBMIT BUTTON -->
+                <button class="submit-button" type="submit">CAKE IT UP</button>
+              </form>
           </div>
       </section>
   </body>
