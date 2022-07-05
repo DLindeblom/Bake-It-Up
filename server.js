@@ -38,6 +38,7 @@ app.use(express.static("public"));
 const homePage = require("./routes/main-page");
 const buyerPage = require("./routes/buyer-main-page");
 const cakeForm = require("./routes/sell-a-cake-form");
+const favourites = require("./routes/buyer-fav-page"); // added a route for favourite cakes list
 // Mount all resource routes
 
 // Note: mount other resources here, using the same pattern above
@@ -46,9 +47,12 @@ const cakeForm = require("./routes/sell-a-cake-form");
 app.use("/", homePage(db));
 app.use("/cakes", buyerPage(db));
 app.use("/form", cakeForm(db));
+app.use("/buyer-fav-page", favourites(db));// added a route for favourite cakes list
 
 // Warning: avoid creating more routes in this file!
 // Separate them into separate routes files (see above).
+
+
 
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);
