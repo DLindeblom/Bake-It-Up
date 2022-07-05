@@ -56,11 +56,6 @@
   <%- include('partials/_header') %>
 
 <body>
-  <!-- product section start here  -->
-  <section class="cakes-container">
-    <div class="heading">
-      <h1>Check Out All Cakes</h1>
-    </div>
 
     <body>
 <!-- product section start here  -->
@@ -98,7 +93,7 @@
           </div>
 
           <div class="status-contact">
-            <button class="cake-status" class="contact-seller-btn"><%= cakes[cake].status %></button>
+            <button class="cake-status" class="contact-seller-btn"><%= cakes[cake].cake_status %></button>
             </p>
             <form class="contact-seller" action="mailto: <%= cakes[cake].email %>" methjod="POST>
                   <label> Contact Seller </label>
@@ -106,6 +101,7 @@
             <button class="contact-seller-btn"> Contact Seller</button>
           </div>
         </div>
+      </div>
 
       <% } %>
 
