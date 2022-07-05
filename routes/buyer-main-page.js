@@ -22,8 +22,18 @@ module.exports = (db) => {
 
   router.get("/favs", (req, res) => {
 
+    getFavCakes(2).then((result) => {
 
-      res.render("buyer-fav-page")
+      const templateVars = { cakes: result };
+      return res.render("buyer-fav-page", templateVars);
+
+    })
+      .catch((err) => {
+        console.log(err);
+        res.send(err);
+      });
+
+
 
 
   });

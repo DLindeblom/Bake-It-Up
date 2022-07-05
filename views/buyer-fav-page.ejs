@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+
+
+  <!-- Font Awesome Library -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    type="text/css" />
+  <!-- External Font from GOOGLE FONT-->
+  <!--
+      font-family: 'Pacifico', cursive;
+      font-family: 'Quicksand', sans-serif; -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+
+  <!-- App CSS -->
+
+  <!-- Style from header.css -->
+  <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+  <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+  <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
+  <!-- Style from buyer-main-page -->
+  <link rel="stylesheet" href="/styles/buyer-main-page.css" type="text/css" />
+  <!-- Style from footer.css -->
+  <link rel="stylesheet" href="/styles/footer.css" type="text/css" />
+
+  <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+  <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/main.css" type="text/css" />
+  <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+
+  <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
+  <script type="text/javascript" src="/scripts/app.js"></script>
+
+  <!-- External JS -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+  <!-- Title and Favicon -->
+  <title>Cake It Up</title>
+  <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+
+  <!-- insert header from _header -->
+  <%- include('partials/_header') %>
+
+<body>
+
+    <body>
+<!-- product section start here  -->
+    <section class="cakes-container">
+      <div class="heading">
+          <h1> Check Out All Of Our Cakes</h1>
+      </div>
+      <br>
+    <% for (let cake in cakes) { %>
+
+      <!-- Each Cake Display -->
+      <div class="display-wrap">
+        <div class="cake-display">
+          <div class="fav-icon">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="cake-photo">
+            <img class="cake-photo" src="<%= cakes[cake].cake_photo_url %>" alt="">
+          </div>
+          <div class="cake-info">
+            <p>
+            <h3>
+              <%= cakes[cake].title %>
+            </h3>
+            </p>
+            <p>
+            <h5>
+              <%= cakes[cake].description %>
+            </h5>
+            </p>
+            <p class="price">
+             $<%= cakes[cake].price %>
+            </p>
+
+          </div>
+          <div class="status-contact">
+            <p class="cake-status">
+              <%= cakes[cake].status %>
+            </p>
+            <form class="contact-seller" action="mailto: <%= cakes[cake].email %>" methjod="POST>
+                  <label> Contact Seller </label>
+                  <input type =" submit" />
+            <button class="contact-seller-btn"> Contact Seller</button>
+          </div>
+        </div>
+
+      <% } %>
+
+
+
+  </section>
+  <!-- product section end here  -->
+</body>
+<!-- insert header from _footer -->
+<%- include('partials/_footer') %>
+
+</html>

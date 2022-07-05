@@ -13,7 +13,7 @@ const getFavCakes = (id) => {
 
   return db.query(
     `
-    SELECT *,
+    SELECT *
     FROM fav_cakes
       JOIN users ON fav_cakes.user_id = users.id
       JOIN cakes ON fav_cakes.cake_id = cakes.id
