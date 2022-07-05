@@ -35,21 +35,20 @@ app.use(express.static("public"));
 
 // Separated Routes for each Resource
 
-
-const homePage = require("./routes/main-page")
-const buyerPage = require("./routes/buyer-main-page")
+const homePage = require("./routes/main-page");
+const buyerPage = require("./routes/buyer-main-page");
+const cakeForm = require("./routes/sell-a-cake-form");
 // Mount all resource routes
-
 
 // Note: mount other resources here, using the same pattern above
 
 // Home page
-app.use("/", homePage(db))
-app.use("/cakes", buyerPage(db) )
+app.use("/", homePage(db));
+app.use("/cakes", buyerPage(db));
+app.use("/form", cakeForm(db));
 
 // Warning: avoid creating more routes in this file!
 // Separate them into separate routes files (see above).
-
 
 app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`);

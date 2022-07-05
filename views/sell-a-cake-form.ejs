@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0"
+  />
+
+
+     <!-- Font Awesome Library -->
+     <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+     integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+     crossorigin="anonymous"
+     referrerpolicy="no-referrer"
+   />
+
+    <!-- External CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      type="text/css"
+    />
+
+    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+    <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/main.css" type="text/css" />
+    <link rel="stylesheet" href="/styles/layout.css" type="text/css" />
+
+    <script type="text/javascript" src="/vendor/jquery-3.0.0.js"></script>
+    <script type="text/javascript" src="/scripts/app.js"></script>
+    <!-- External Font from GOOGLE FONT-->
+     <!--
+      font-family: 'Pacifico', cursive;
+      font-family: 'Quicksand', sans-serif; -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+
+     <!-- App CSS -->
+
+    <!-- Style from header.css -->
+    <link rel="stylesheet" href="/styles/header.css" type="text/css" />
+    <link rel="stylesheet" href="/vendor/normalize-4.1.1.css" type="text/css" />
+    <link rel="stylesheet" href="/vendor/border-box.css" type="text/css" />
+     <!-- Style from welcome-page.css -->
+     <link rel="stylesheet" href="/styles/welcome-page.css" type="text/css" />
+    <!-- Style from footer.css -->
+    <link rel="stylesheet" href="/styles/footer.css" type="text/css" />
+    <!-- Style from Sell a cake.css -->
+    <link rel="stylesheet" href="/styles/sell-a-cake-form.css" type="text/css" />
+
+    <!-- External JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+    <!-- Title and Favicon -->
+    <title>Cake It Up</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.png">
+
+  <body>
+    <!-- insert header from _header -->
+    <%- include('partials/_header') %>
+
+        <!-- home section start here  -->
+        <section class="sell-a-cake-form">
+
+          <div class="form-container">
+              <h2> Let's Sell Your Cake </h2>
+              <p> Cakes are special. Every birthday, every celebration ends with something sweet, a cake, and people remember. It's all about the memories. Let's us be apart of your happiness. </p>
+              <div class="home-btn">
+                  <a href="/cakes"><button>SEE ALL CAKES</button></a>
+              </div>
+          </div>
+      </section>
+  </body>
+  <!-- insert header from _footer -->
+  <%- include('partials/_footer') %>
+</html>
+
+
