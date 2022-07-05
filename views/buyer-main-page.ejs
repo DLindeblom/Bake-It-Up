@@ -93,12 +93,11 @@
           </div>
 
           <div class="status-contact">
-            <button class="cake-status" class="contact-seller-btn"><%= cakes[cake].cake_status %></button>
-            </p>
-            <form class="contact-seller" action="mailto: <%= cakes[cake].email %>" methjod="POST>
-                  <label> Contact Seller </label>
-                  <input type =" submit" />
+            <button action="/fav" method="POST" class="cake-status"> <%= cakes[cake].cake_status %> </button>
+
+            <a href="mailto: <%= cakes[cake].email %>">
             <button class="contact-seller-btn"> Contact Seller</button>
+          </a>
           </div>
         </div>
       </div>

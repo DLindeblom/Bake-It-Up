@@ -119,7 +119,7 @@ html {
   /* font-family: "Quicksand", sans-serif; */
   /* font-family: 'Pacifico', cursive; */
 
-  padding-top: 12%;
+  padding-top: 11%;
 }
 
 .home .homeContent {
@@ -304,6 +304,7 @@ div.heading {
   z-index: 5;
   width: 100%;
   justify-content: center;
+  margin-bottom: 2rem;
 }
 
 div.fav-icon {
@@ -349,7 +350,7 @@ img.cake-photo:hover {
   direction: row;
   max-width: 33.33%;
   width: 33.33%;
-  padding: 1.5rem
+  padding: 1.5rem;
 }
 
 .cake-info p {
