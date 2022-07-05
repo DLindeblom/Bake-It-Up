@@ -68,18 +68,18 @@
           <div class="collection-sort">
 
             <p class="filter-by-prices">Filter By Prices</p>
-
-            <select class="filter-by-prices" >
-              <option value="/">Below $50</option>
-              <option value="/">$50 - $100</option>
-              <option value="/">$100 - $150</option>
-              <option value="/">Above $150</option>
+            <!-- Filter form -->
+            <form action="/cakes" method="GET">
+            <select name="filter" class="filter-by-prices" >
+              <option value="0">Below $50</option>
+              <option value="1">$50 - $100</option>
+              <option value="2">$100 - $150</option>
+              <option value="3">Above $150</option>
             </select>
+            <button type="submit">Filter Now</button>
+          </form>
 
           </div>
-
-
-
 
       </div>
       <br>
