@@ -243,8 +243,8 @@ section {
   flex-direction: column;
   padding-top: 10%;
   justify-content: space-between;
+  flex-wrap: wrap;
   min-height: 100vh;
-  display: flex;
   align-items: center;
   background-size: cover;
   background-position: center center;
@@ -262,12 +262,16 @@ section {
   /* font-family: "Quicksand", sans-serif; */
   /* font-family: 'Pacifico', cursive; */
 }
+
 div.cake-display {
   background-color: #fef1df;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   margin: 1rem 1rem 2rem 2rem;
   border-radius: 2rem;
   border: 1px solid #f4d9b4;
+
+  /* margin-top set to auto to Bottom-Aligning the Product Footers */
+  margin-top: auto;
 }
 
 h1 {
@@ -439,16 +443,17 @@ p.price {
 
 .fa-heart {
   font-size: 50px;
-  color: #a0c3f4;
+  color: #5985ca;
 }
 .fa-heart:hover {
   font-size: 55px;
-  color: #f4a0c3;
+  color: #d988a7;
 }
 
 form.contact-seller {
   margin-right: 5px;
 }
+
 //----------------------BUYER-MAIN-PAGE END HERE-------------------------------------------//
 
 //----------------------SELL A CAKE FORM START HERE-------------------------------------------//
