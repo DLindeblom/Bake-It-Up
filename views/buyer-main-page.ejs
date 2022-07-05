@@ -60,8 +60,27 @@
     <body>
 <!-- SHOW ALL CAKES SECTION START HERE  -->
     <section class="cakes-container">
+
       <div class="heading">
           <h1> Check Out All Of Our Cakes</h1>
+
+
+          <div class="collection-sort">
+
+            <p class="filter-by-prices">Filter By Prices</p>
+
+            <select class="filter-by-prices" >
+              <option value="/">Below $50</option>
+              <option value="/">$50 - $100</option>
+              <option value="/">$100 - $150</option>
+              <option value="/">Above $150</option>
+            </select>
+
+          </div>
+
+
+
+
       </div>
       <br>
     <% for (let cake in cakes) { %>

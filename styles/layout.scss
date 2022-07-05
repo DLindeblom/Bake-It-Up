@@ -305,6 +305,7 @@ div.heading {
   width: 100%;
   justify-content: center;
   margin-bottom: 2rem;
+  justify-content: space-between;
 }
 
 div.fav-icon {
@@ -528,6 +529,26 @@ p.price {
 form.contact-seller {
   margin-right: 5px;
 }
+
+// SORT BY FILTER FEATURE
+.collection-sort {
+  display: flex;
+  flex-direction: column;
+  font-family: "Quicksand", sans-serif;
+  width: 8.5%;
+}
+.filter-by-prices {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+select.filter-by-prices{
+  border-radius: 0.5rem;
+  border: #fef1df solid 10px;
+}
+
 
 //----------------------BUYER-MAIN-PAGE END HERE-------------------------------------------//
 
