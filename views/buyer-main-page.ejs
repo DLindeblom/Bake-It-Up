@@ -68,8 +68,9 @@
 
       <!-- Each Cake Display -->
       <div class="display-wrap">
-        <div class="cake-display">
-          <div class="fav-icon">
+
+        <div class="cake-display" id="<%= cakes[cake].id %>">
+          <div class="fav-icon" onclick="saveFavourite(event)">
             <i class="fa-solid fa-heart"></i>
           </div>
           <div class="cake-photo">
@@ -107,6 +108,7 @@
 
 
   </section>
+  <script src="../public/scripts/app.js"></script>
   <!-- product section end here  -->
 </body>
 <!-- insert header from _footer -->
