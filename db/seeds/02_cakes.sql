@@ -66,7 +66,13 @@ VALUES
 
 ( 2, 'https://i.pinimg.com/736x/e6/24/e8/e624e85342ae6e717e43b03b58564cb8.jpg', 'Peach & Bery Trio'  , 'A combo of 3 macaron cakes: peach and berry',320 ),
 
-( 2, 'https://www.itakeyou.co.uk/wp-content/uploads/2021/10/minimalist-cake.jpg', 'Small Customize Cake'  , 'Customize birthday cake made by order', 190 );
+( 2, 'https://www.itakeyou.co.uk/wp-content/uploads/2021/10/minimalist-cake.jpg', 'Small Customize Cake'  , 'Customize birthday cake made by order', 190 ),
+
+( 2, 'https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F37%2F2019%2F01%2F07145741%2FR158212.jpg&w=380&h=380&c=sc&poi=face&q=60', 'Zoo Cupcakes'  , 'Zoo Cupcakes, perfect for your kid birthday party',46 ),
+
+( 2, 'https://i.pinimg.com/736x/ab/94/44/ab9444257065d600dc413efecd882dfa.jpg', 'Peach Floral Cookies'  , 'Peachy floral cookies with a note of rosey aroma',46 ),
+
+( 2, 'http://cdn.shopify.com/s/files/1/0522/3009/5038/products/peachgarden_front.jpg?v=1614633914', 'Peach Garden Mini Cake'  , 'Peach mini cake single portion, made with real fruit jam', 48 );
 
 
 
