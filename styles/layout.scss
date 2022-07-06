@@ -248,6 +248,8 @@ section {
   align-items: center;
   background-size: cover;
   background-position: center center;
+  row-gap: 3rem;
+
 
   /* The image used */
   background: url(/images/welcome-page.jpg);
@@ -267,7 +269,7 @@ section {
 div.cake-display {
   background-color: #fef1df;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
-  margin: 1rem 1rem 2rem 2rem;
+  // margin: 1rem 1rem 2rem 2rem;
   border-radius: 2rem;
   border: 1px solid #f4d9b4;
 
@@ -301,10 +303,12 @@ div.heading {
   padding-right: 2rem;
   background-color: rgb(0, 0, 0); /* Fallback color */
   background-color: rgba(0, 0, 0, 0.3); /* Black w/opacity/see-through */
+
   z-index: 5;
   width: 100%;
   justify-content: center;
   margin-bottom: 2rem;
+  justify-content: space-between;
 }
 
 div.fav-icon {
@@ -349,8 +353,7 @@ img.cake-photo:hover {
   display: block;
   direction: row;
   max-width: 33.33%;
-  width: 33.33%;
-  padding: 1.5rem;
+  width: 32%;
 }
 
 .cake-info p {
@@ -527,6 +530,24 @@ p.price {
 
 form.contact-seller {
   margin-right: 5px;
+}
+
+// SORT BY FILTER FEATURE
+.collection-sort {
+  display: flex;
+  flex-direction: column;
+  font-family: "Quicksand", sans-serif;
+  width: 8.5%;
+}
+.filter-by-prices {
+  font-family: "Quicksand", sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+select.filter-by-prices {
+  border-radius: 0.5rem;
 }
 
 //----------------------BUYER-MAIN-PAGE END HERE-------------------------------------------//

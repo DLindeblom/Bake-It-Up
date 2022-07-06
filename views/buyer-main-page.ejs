@@ -60,8 +60,28 @@
     <body>
 <!-- SHOW ALL CAKES SECTION START HERE  -->
     <section class="cakes-container">
+
       <div class="heading">
           <h1> Check Out All Of Our Cakes</h1>
+
+
+          <div class="collection-sort">
+
+            <p class="filter-by-prices">Filter By Prices</p>
+            <!-- Filter form -->
+            <form action="/cakes" method="GET">
+            <select name="filter" class="filter-by-prices" >
+              <option value="0">Display All</option>
+              <option value="1">Below $50</option>
+              <option value="2">$50 - $100</option>
+              <option value="3">$100 - $150</option>
+              <option value="4">Above $150</option>
+            </select>
+            <button type="submit">Filter Now</button>
+          </form>
+
+          </div>
+
       </div>
       <br>
     <% for (let cake in cakes) { %>
@@ -89,9 +109,7 @@
             <p class="price">
              $<%= cakes[cake].price %>
             </p>
-
           </div>
-
           <!-- CAKE STATUS AND CONTACT SELLER SECTION -->
             <!-- cake_status -->
           <div class="status-contact">
