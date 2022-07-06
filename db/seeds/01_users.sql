@@ -2,8 +2,8 @@
 
 -- INSERT 2 SELLERS
 INSERT INTO users (name, email, password, seller) VALUES
-('Ann Bui', 'an@bui.com', '123', TRUE),
-('Dan', 'dan@l.com', '123', TRUE);
+('Ann Bui', 'ieatsomuchcake@gmail.com', '123', TRUE),
+('Dan L', 'ieatsomuchcake@gmail.com', '123', TRUE);
 
 -- INSERT 1 BUYER
 INSERT INTO users (name, email, password) VALUES
