@@ -32,6 +32,15 @@ html {
   font-weight: bolder;
 }
 
+// User-Admin icon on header START
+.fa-user {
+  font-size: 3rem;
+}
+.fa-lock {
+  font-size: 3rem;
+}
+// User-Admin icon on header END
+
 .header a:link {
   text-decoration: none;
 }
@@ -549,12 +558,12 @@ select.filter-by-prices {
   border-radius: 0.5rem;
 }
 
-#filter-button{
-  margin-left:1px;
+#filter-button {
+  margin-left: 1px;
   font-size: 2rem;
 }
 
-section.cakes-container{
+section.cakes-container {
   width: 100%;
 }
 
