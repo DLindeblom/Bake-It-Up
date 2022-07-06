@@ -248,7 +248,7 @@ section {
   align-items: center;
   background-size: cover;
   background-position: center center;
-  row-gap: 3rem;
+  row-gap: 5rem;
 
 
   /* The image used */
@@ -319,12 +319,12 @@ div.fav-icon {
 img.cake-photo {
   width: 22rem;
   border-radius: 50%;
-  border: 20px solid white;
+  border: 15px solid #FAF9F6;
 }
 img.cake-photo:hover {
   cursor: pointer;
   width: 24rem;
-  border: 15px solid white;
+  border: 16px solid #FAF9F6;
 }
 
 .cake-info h3 {
@@ -352,8 +352,8 @@ img.cake-photo:hover {
 .display-wrap {
   display: block;
   direction: row;
-  max-width: 33.33%;
-  width: 32%;
+  max-width: 33%;
+  width: 23%;
 }
 
 .cake-info p {
@@ -554,7 +554,7 @@ select.filter-by-prices {
 
 //----------------------SELL A CAKE FORM START HERE-------------------------------------------//
 section {
-  padding: 3rem 3%;
+  padding: 4rem 4.5%;
 }
 
 .sell-a-cake-form {
