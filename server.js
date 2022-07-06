@@ -61,7 +61,7 @@ app.use("/form", cakeForm(db));
 app.use("/mycakes", myCakes(db));
 app.use("/logout", logout());
 app.use("/delete", deleteCake(db))
-app.use("/update", updateCake(db))
+app.use("/update", updateCake())
 
 // Warning: avoid creating more routes in this file!
 // Separate them into separate routes files (see above).

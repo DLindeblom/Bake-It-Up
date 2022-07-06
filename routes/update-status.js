@@ -1,13 +1,14 @@
 const express = require("express");
+const updateCakeStatus = require("../public/scripts/updateStatus");
 const router = express.Router()
 
-module.exports = (db) => {
+module.exports = () => {
 
   router.post("/:id/", (req, res) => {
 
     const cakeId = req.params.id;
 
-    return db.query(`UPDATE cakes SET cake_status = 'SOLD!' WHERE id = $1`, [cakeId])
+    updateCakeStatus(cakeId)
       .then(() => {
         res.redirect("/mycakes")
       })
