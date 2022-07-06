@@ -379,7 +379,7 @@ img.cake-photo:hover {
   font-weight: 600;
 }
 .contact-seller-btn {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: "Quicksand", sans-serif;
   font-weight: 900;
   border: none;
@@ -387,7 +387,7 @@ img.cake-photo:hover {
 .contact-seller {
   margin: 0 -0.25rem;
   padding: 0 0.25rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-right: 3rem;
   color: var(--black);
   font-weight: bold;
@@ -447,7 +447,7 @@ button.cake-status {
   font-weight: 600;
 }
 button.cake-status {
-  font-size: 1.5rem;
+  font-size: 2rem;
   font-family: "Quicksand", sans-serif;
   font-weight: 900;
   border: none;
@@ -455,7 +455,7 @@ button.cake-status {
 button.cake-status {
   margin: 0 -0.25rem;
   padding: 0 0.25rem;
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin-right: 3rem;
   color: var(--black);
   font-weight: bold;
@@ -565,6 +565,11 @@ select.filter-by-prices {
 
 section.cakes-container {
   width: 100%;
+}
+//  FAV Button Heart Icon ON BUYER PAGE
+button.fav-button {
+  background-color: transparent;
+  border: none;
 }
 
 //----------------------BUYER-MAIN-PAGE END HERE-------------------------------------------//

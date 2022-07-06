@@ -13,7 +13,7 @@
     <a href="#log-in">Sign In</a>
     <a href="#sign-up">Sign Up</a>
 
-    <!----- SELLER LOGGED_IN ----->
+    <!----- SELLER/ADMIN LOGGED_IN ----->
     <%} if (userID < 10) { %>
 
     <a href="/mycakes">My Cakes</a>
@@ -21,7 +21,7 @@
     <a href="/">Sign Out</a>
     <i class="fa-solid fa-lock"></i>
 
-    <!----- BUYER LOGGED_IN ----->
+    <!----- BUYER/USER LOGGED_IN ----->
     <%} if (userID > 10) { %>
 
     <a href="/cakes">All Cakes</a>
