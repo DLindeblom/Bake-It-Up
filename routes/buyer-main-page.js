@@ -8,8 +8,8 @@ module.exports = (db) => {
   router.get("/", (req, res) => {
     console.log("is this working");
     //value is pulled from front end name = "filter"
-    const value = req.query.filter;
-    console.log(value);
+    const value = Number(req.query.filter);
+
 
     getCakeInfo(value)
       .then((result) => {

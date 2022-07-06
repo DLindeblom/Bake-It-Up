@@ -12,6 +12,10 @@ db.connect();
 
 // get database info
 const getCakeInfo = (value) => {
+  console.log("getCakeInfo Value is:", value);
+  console.log("type of VALUE IS:", typeof value);
+  console.log(typeof value);
+
   // FILTER QUERY BASE ON VALUE ON HTML SKELETON
   // value = 0 => select all
   if (value === 0) {
@@ -42,7 +46,7 @@ const getCakeInfo = (value) => {
       .catch((error) => {
         console.log(error);
       });
-      
+
     // value = 2 => select price from 50 to 100
   } else if (value === 2) {
     console.log("value is 2 ");
