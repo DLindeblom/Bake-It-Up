@@ -1,80 +1,67 @@
-const { Pool } = require("pg");
-const dbParams = require("../../lib/db.js");
-const db = new Pool(dbParams);
-db.connect();
+const db = require("./dbConnection")
 
-// get database info
+
+//queries the database and returns all cakes until the filter is used and then it will return cakes based on price range
+
 const getCakeInfo = (value) => {
-  console.log("getCakeInfo Value is:", value);
-  console.log("type of VALUE IS:", typeof value);
-  console.log(typeof value);
 
   // FILTER QUERY BASE ON VALUE ON HTML SKELETON
-  // value = 0 => select all
+
   if (value === 0) {
-    console.log("value is 0");
     return db
       .query(
         "SELECT cakes.*, users.email FROM cakes JOIN users ON cakes.user_id = users.id;"
       )
       .then((response) => {
-        console.log(response.rows);
         return response.rows;
       })
       .catch((error) => {
         console.log(error);
       });
 
-    // value = 1 => select price <50
+
   } else if (value === 1) {
-    console.log("value is 1 so less than $50");
     return db
       .query(
         "SELECT cakes.*, users.email FROM cakes JOIN users ON cakes.user_id = users.id WHERE cakes.price < 50 ORDER BY cakes.price ASC;"
       )
       .then((response) => {
-        console.log(response.rows);
         return response.rows;
       })
       .catch((error) => {
         console.log(error);
       });
 
-    // value = 2 => select price from 50 to 100
   } else if (value === 2) {
-    console.log("value is 2 ");
     return db
       .query(
         "SELECT cakes.*, users.email FROM cakes JOIN users ON cakes.user_id = users.id WHERE cakes.price > 50 AND cakes.price <100 ORDER BY cakes.price ASC;"
       )
       .then((response) => {
-        console.log(response.rows);
         return response.rows;
       })
       .catch((error) => {
         console.log(error);
       });
+
   } else if (value === 3) {
-    console.log("value is 3");
     return db
       .query(
         "SELECT cakes.*, users.email FROM cakes JOIN users ON cakes.user_id = users.id WHERE cakes.price > 100 AND cakes.price < 150 ORDER BY cakes.price ASC;"
       )
       .then((response) => {
-        console.log(response.rows);
         return response.rows;
       })
       .catch((error) => {
         console.log(error);
       });
+
   } else if (value === 4) {
-    console.log("value is 4 ");
     return db
       .query(
         "SELECT cakes.*, users.email FROM cakes JOIN users ON cakes.user_id = users.id  WHERE cakes.price > 150 ORDER BY cakes.price ASC;"
       )
       .then((response) => {
-        console.log(response.rows);
         return response.rows;
       })
       .catch((error) => {
@@ -83,16 +70,16 @@ const getCakeInfo = (value) => {
   }
 
   return db
-    .query(
-      "SELECT cakes.*, users.email FROM cakes JOIN users ON cakes.user_id = users.id;"
-    )
-    .then((response) => {
-      console.log(response.rows);
-      return response.rows;
-    })
-    .catch((error) => {
-      console.log(error);
-    });
+  .query(
+    "SELECT cakes.*, users.email FROM cakes JOIN users ON cakes.user_id = users.id;"
+  )
+  .then((response) => {
+    return response.rows;
+  })
+  .catch((error) => {
+    console.log(error);
+  });
+
 };
 
 module.exports = getCakeInfo;

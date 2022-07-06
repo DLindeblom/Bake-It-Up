@@ -1,8 +1,6 @@
-const { Pool } = require("pg");
-const dbParams = require("../../lib/db.js");
-const db = new Pool(dbParams);
-db.connect();
+const db = require("./dbConnection");
 
+// queries the database and returns all cakes that particular seller has posted to the database
 
 const getMyCakes = (id) => {
 
@@ -14,11 +12,11 @@ const getMyCakes = (id) => {
     `, [id])
 
     .then((response) => {
-      return response.rows
+      return response.rows;
     })
     .catch((err) => {
-      console.log(err)
-    })
-}
+      console.log(err);
+    });
+};
 
-module.exports = getMyCakes
+module.exports = getMyCakes;

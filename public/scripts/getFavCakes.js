@@ -1,8 +1,6 @@
-const { Pool } = require("pg");
-const dbParams = require("../../lib/db.js");
-const db = new Pool(dbParams);
-db.connect();
+const db = require("./dbConnection");
 
+// queries the database and returns favorite cakes based on the user who is logged in
 
 const getFavCakes = (id) => {
 
@@ -16,11 +14,11 @@ const getFavCakes = (id) => {
     `, [id])
 
     .then((response) => {
-      return response.rows
+      return response.rows;
     })
     .catch((err) => {
-      console.log(err)
-    })
-}
+      console.log(err);
+    });
+};
 
-module.exports = getFavCakes
+module.exports = getFavCakes;

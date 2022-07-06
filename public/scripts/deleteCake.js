@@ -1,21 +1,20 @@
-// const { Pool } = require("pg");
-// const dbParams = require("../../lib/db.js");
-// const db = new Pool(dbParams);
-// db.connect();
+const db = require("./dbConnection")
 
-// const deleteCake = (cakeId) => {
+// queries the database and removes cake after seller chooses to delete from mycakes
 
-//   return db.query(
-//     `
-//     DELETE FROM cakes
-//     WHERE cakes.id =  $1`,
-//     [cakeId])
-//     .then((response) => {
-//       return response.rows;
-//     })
-//     .catch((err) => {
-//       console.log(err)
-//     });
-// }
+const deleteCake = (cakeId) => {
 
-// module.exports = deleteCake;
+  return db.query(
+    `
+    DELETE FROM cakes
+    WHERE cakes.id =  $1`,
+    [cakeId])
+    .then((response) => {
+      return response.rows;
+    })
+    .catch((err) => {
+      console.log(err)
+    });
+}
+
+module.exports = deleteCake;
