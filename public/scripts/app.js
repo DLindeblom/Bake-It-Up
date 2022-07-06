@@ -1,1 +1,2 @@
-// Client facing scripts here
+const db = require("./dbConnection")
+
