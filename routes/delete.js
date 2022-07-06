@@ -1,14 +1,14 @@
 const express = require("express");
+const deleteCake = require("../public/scripts/deleteCake");
 const router = express.Router();
 
 module.exports = (db) => {
 
   router.post("/:id/", (req, res) => {
 
-    const cakeId = req.params.id
-    console.log(cakeId)
-    return db.query(`
-      DELETE FROM cakes WHERE cakes.id =  $1`, [cakeId])
+    const cakeId = req.params.id;
+
+      deleteCake(cakeId)
         .then(() => {
           res.redirect("/mycakes")
         })
