@@ -95,8 +95,9 @@
           <!-- CAKE STATUS AND CONTACT SELLER SECTION -->
             <!-- cake_status -->
           <div class="status-contact">
-            <button action="/fav" method="POST" class="cake-status"> <%= cakes[cake].cake_status %> </button>
-
+            <form  action="/update/<%= cakes[cake].id %>" method="POST">
+              <button class="cake-status"> <%= cakes[cake].cake_status %> </button>
+            </form>
             <!-- contact seller button -->
             <form action="/delete/<%= cakes[cake].id %>/" method="POST">
               <button class="contact-seller-btn">Delete</button>
