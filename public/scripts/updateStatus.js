@@ -1,6 +1,5 @@
 const db = require("./dbConnection");
 
-
 // queries the database and changes default status of available when posted to sold if the cake is sold
 
 const updateCakeStatus = (cakeId) => {
