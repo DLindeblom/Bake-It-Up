@@ -10,10 +10,10 @@ module.exports = (db) => {
     //value is pulled from front end name = "filter"
     const value = Number(req.query.filter);
 
-
     getCakeInfo(value)
       .then((result) => {
-        const templateVars = { cakes: result };
+        const userID = req.cookies.user_id;
+        const templateVars = { cakes: result, userID };
         return res.render("buyer-main-page", templateVars);
       })
       .catch((err) => {
@@ -23,7 +23,7 @@ module.exports = (db) => {
   });
 
   router.get("/favs", (req, res) => {
-    res.render("buyer-fav-page");
+    res.render("buyer-fav-page", templateVars);
   });
 
   return router;

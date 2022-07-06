@@ -7,7 +7,26 @@
   </div>
 
   <nav class="navbar">
-    <a href="/my-fav">My Favorite</a>
-    <a href="/about">About Us</a>
+    <!----- DEFAULT W/O USER ----->
+    <% if (!userID){%>
+
+    <a href="#log-in">Sign In</a>
+    <a href="#sign-up">Sign Up</a>
+
+    <!----- SELLER LOGGED_IN ----->
+    <%} if (userID < 10) { %>
+
+    <a href="/mycakes">My Cakes</a>
+    <a href="/form">Sell A Cake</a>
+    <a href="/logout">Sign Out</a>
+
+    <!----- BUYER LOGGED_IN ----->
+    <%} if (userID > 10) { %>
+
+    <a href="/cakes">All Cakes</a>
+    <a href="/cakes/favs">My Favorites</a>
+    <a href="/logout">Sign Out</a>
+
+    <% } %>
   </nav>
 </header>

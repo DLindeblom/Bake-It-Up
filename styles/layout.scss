@@ -131,7 +131,7 @@ html {
 }
 .home .homeContent h2 {
   margin-top: 2rem;
-  font-size: 7rem;
+  font-size: 12rem;
   font-weight: 400;
   margin-bottom: 2rem;
   line-height: 7rem;
@@ -165,6 +165,7 @@ div.homeContent {
   background-color: rgba(255, 255, 255, 0.7); /* Black w/opacity/see-through */
   color: black;
   z-index: 5;
+  margin-top: -8rem;
 }
 
 section {
@@ -177,7 +178,7 @@ section {
 .home a {
   margin: 0 -0.25rem;
   padding: 0 0.25rem;
-  font-size: 2rem;
+  font-size: rem;
   margin-right: 3rem;
   color: var(--black);
   font-weight: bold;
@@ -248,8 +249,7 @@ section {
   align-items: center;
   background-size: cover;
   background-position: center center;
-  row-gap: 3rem;
-
+  row-gap: 5rem;
 
   /* The image used */
   background: url(/images/welcome-page.jpg);
@@ -319,12 +319,12 @@ div.fav-icon {
 img.cake-photo {
   width: 22rem;
   border-radius: 50%;
-  border: 20px solid white;
+  border: 15px solid #faf9f6;
 }
 img.cake-photo:hover {
   cursor: pointer;
   width: 24rem;
-  border: 15px solid white;
+  border: 16px solid #faf9f6;
 }
 
 .cake-info h3 {
@@ -352,8 +352,8 @@ img.cake-photo:hover {
 .display-wrap {
   display: block;
   direction: row;
-  max-width: 33.33%;
-  width: 32%;
+  max-width: 33%;
+  width: 23%;
 }
 
 .cake-info p {
@@ -537,7 +537,7 @@ form.contact-seller {
   display: flex;
   flex-direction: column;
   font-family: "Quicksand", sans-serif;
-  width: 8.5%;
+  width: 12.2%;
 }
 .filter-by-prices {
   font-family: "Quicksand", sans-serif;
@@ -545,16 +545,24 @@ form.contact-seller {
   margin-bottom: 1rem;
   font-weight: 600;
 }
-
 select.filter-by-prices {
   border-radius: 0.5rem;
+}
+
+#filter-button{
+  margin-left:1px;
+  font-size: 2rem;
+}
+
+section.cakes-container{
+  width: 100%;
 }
 
 //----------------------BUYER-MAIN-PAGE END HERE-------------------------------------------//
 
 //----------------------SELL A CAKE FORM START HERE-------------------------------------------//
 section {
-  padding: 3rem 3%;
+  padding: 4rem 4.5%;
 }
 
 .sell-a-cake-form {
