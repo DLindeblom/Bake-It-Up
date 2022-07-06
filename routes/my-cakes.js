@@ -8,12 +8,12 @@ module.exports = (db) => {
 
   router.get("/", (req, res) => {
 
-    const userId = req.cookies.user_id
+    const userID = req.cookies.user_id
     // console.log(req.cookies)
 
-    getMyCakes(userId)
+    getMyCakes(userID)
       .then((result) => {
-        const templateVars = {cakes: result}
+        const templateVars = {cakes: result, userID}
         console.log(templateVars)
         return res.render("seller-my-cakes", templateVars)
       })
@@ -29,13 +29,13 @@ module.exports = (db) => {
     const title = req.body.title;
     const description = req.body.description;
     const price = req.body.price;
-    const userId = req.cookies.user_id;
+    const userID = req.cookies.user_id;
 
     const queryString = `
     INSERT INTO cakes (user_id, cake_photo_url, title, description, price)
     VALUES ($1, $2, $3, $4, $5)
     `
-    const queryParams = [userId, cake_photo_url, title, description, price];
+    const queryParams = [userID, cake_photo_url, title, description, price];
 
     return db.query(queryString, queryParams)
       .then(() => {
