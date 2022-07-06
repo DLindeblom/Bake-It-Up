@@ -1,13 +1,6 @@
-// require("dotenv").config();
-
 const { Pool } = require("pg");
-// const dbParams = require("../../lib/db.js");
-const db = new Pool({
-  user: "labber",
-  password: "labber",
-  host: "localhost",
-  database: "midterm",
-});
+const dbParams = require("../../lib/db.js");
+const db = new Pool(dbParams);
 db.connect();
 
 // get database info
