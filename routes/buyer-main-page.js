@@ -7,10 +7,11 @@ const getFavCakes = require("../public/scripts/getFavCakes");
 module.exports = (db) => {
   router.get("/", (req, res) => {
     console.log("is this working");
-    const value = req.query;
+    //value is pulled from front end name = "filter"
+    const value = req.query.filter;
     console.log(value);
 
-    getCakeInfo()
+    getCakeInfo(value)
       .then((result) => {
         const templateVars = { cakes: result };
         return res.render("buyer-main-page", templateVars);
