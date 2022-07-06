@@ -537,7 +537,7 @@ form.contact-seller {
   display: flex;
   flex-direction: column;
   font-family: "Quicksand", sans-serif;
-  width: 8.5%;
+  width: 12.2%;
 }
 .filter-by-prices {
   font-family: "Quicksand", sans-serif;
@@ -545,9 +545,17 @@ form.contact-seller {
   margin-bottom: 1rem;
   font-weight: 600;
 }
-
 select.filter-by-prices {
   border-radius: 0.5rem;
+}
+
+#filter-button{
+  margin-left:1px;
+  font-size: 2rem;
+}
+
+section.cakes-container{
+  width: 100%;
 }
 
 //----------------------BUYER-MAIN-PAGE END HERE-------------------------------------------//
