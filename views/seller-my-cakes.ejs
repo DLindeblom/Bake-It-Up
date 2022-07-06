@@ -98,9 +98,9 @@
             <button action="/fav" method="POST" class="cake-status"> <%= cakes[cake].cake_status %> </button>
 
             <!-- contact seller button -->
-            <a href="mailto: <%= cakes[cake].email %>">
-            <button class="contact-seller-btn"> Contact Seller</button>
-            </a>
+            <form action="/delete/<%= cakes[cake].id %>/" method="POST">
+              <button class="contact-seller-btn">Delete</button>
+            </form>
           </div>
         </div>
       </div>

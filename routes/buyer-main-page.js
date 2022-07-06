@@ -6,7 +6,7 @@ const getFavCakes = require("../public/scripts/getFavCakes");
 
 module.exports = (db) => {
   router.get("/", (req, res) => {
-    console.log("is this working");
+    // console.log("is this working");
     //value is pulled from front end name = "filter"
     const value = Number(req.query.filter);
 

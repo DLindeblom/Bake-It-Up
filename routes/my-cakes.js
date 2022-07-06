@@ -14,7 +14,7 @@ module.exports = (db) => {
     getMyCakes(userId)
       .then((result) => {
         const templateVars = {cakes: result}
-        console.log(templateVars)
+        // console.log(templateVars)
         return res.render("seller-my-cakes", templateVars)
       })
       .catch((err) => {
@@ -46,6 +46,7 @@ module.exports = (db) => {
       })
 
   })
+
 
   return router;
 }
