@@ -44,6 +44,7 @@ const homePage = require("./routes/main-page");
 const buyerPage = require("./routes/buyer-main-page");
 const cakeForm = require("./routes/sell-a-cake-form");
 const login = require("./routes/login")
+const myCakes = require("./routes/my-cakes")
 // Mount all resource routes
 
 // Note: mount other resources here, using the same pattern aboves
@@ -54,6 +55,7 @@ app.use("/", homePage(db));
 app.use("/login", login())
 app.use("/cakes", buyerPage(db));
 app.use("/form", cakeForm(db));
+app.use("/mycakes", myCakes(db))
 
 // Warning: avoid creating more routes in this file!
 // Separate them into separate routes files (see above).

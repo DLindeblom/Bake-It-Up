@@ -9,15 +9,13 @@ const db = new Pool({
 db.connect();
 
 
-const getFavCakes = (id) => {
+const getMyCakes = (id) => {
 
   return db.query(
     `
     SELECT *
-    FROM fav_cakes
-      JOIN users ON fav_cakes.user_id = users.id
-      JOIN cakes ON fav_cakes.cake_id = cakes.id
-    WHERE users.id = $1
+    FROM cakes
+    WHERE user_id = $1
     `, [id])
 
     .then((response) => {
@@ -28,4 +26,4 @@ const getFavCakes = (id) => {
     })
 }
 
-module.exports = getFavCakes
+module.exports = getMyCakes
