@@ -91,9 +91,11 @@
         <div class="cake-display">
           <div class="fav-icon">
             <!-- FAV BUTTON-HEART ICON -->
-            <button action="/fav" method="POST" type="submit" class="fav-button">
+            <form action="/fav" method="POST">
+            <button  type="submit" class="fav-button">
             <i class="fa-solid fa-heart"></i>
             </button>
+            </form>
           </div>
           <div class="cake-photo">
             <img class="cake-photo" src="<%= cakes[cake].cake_photo_url %>" alt="">
