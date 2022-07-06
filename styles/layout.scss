@@ -131,7 +131,7 @@ html {
 }
 .home .homeContent h2 {
   margin-top: 2rem;
-  font-size: 7rem;
+  font-size: 12rem;
   font-weight: 400;
   margin-bottom: 2rem;
   line-height: 7rem;
@@ -165,6 +165,7 @@ div.homeContent {
   background-color: rgba(255, 255, 255, 0.7); /* Black w/opacity/see-through */
   color: black;
   z-index: 5;
+  margin-top: -8rem;
 }
 
 section {
@@ -177,7 +178,7 @@ section {
 .home a {
   margin: 0 -0.25rem;
   padding: 0 0.25rem;
-  font-size: 2rem;
+  font-size: rem;
   margin-right: 3rem;
   color: var(--black);
   font-weight: bold;
@@ -250,7 +251,6 @@ section {
   background-position: center center;
   row-gap: 5rem;
 
-
   /* The image used */
   background: url(/images/welcome-page.jpg);
 
@@ -319,12 +319,12 @@ div.fav-icon {
 img.cake-photo {
   width: 22rem;
   border-radius: 50%;
-  border: 15px solid #FAF9F6;
+  border: 15px solid #faf9f6;
 }
 img.cake-photo:hover {
   cursor: pointer;
   width: 24rem;
-  border: 16px solid #FAF9F6;
+  border: 16px solid #faf9f6;
 }
 
 .cake-info h3 {
