@@ -37,7 +37,7 @@ const getCakeInfo = (value) => {
     console.log("value is 1 so less than $50");
     return db
       .query(
-        "SELECT cakes.*, users.email FROM cakes JOIN users ON cakes.user_id = users.id WHERE cakes.price < 50;"
+        "SELECT cakes.*, users.email FROM cakes JOIN users ON cakes.user_id = users.id WHERE cakes.price < 50 ORDER BY cakes.price ASC;"
       )
       .then((response) => {
         console.log(response.rows);
@@ -52,7 +52,7 @@ const getCakeInfo = (value) => {
     console.log("value is 2 ");
     return db
       .query(
-        "SELECT cakes.*, users.email FROM cakes JOIN users ON cakes.user_id = users.id WHERE cakes.price > 50 AND cakes.price <100;"
+        "SELECT cakes.*, users.email FROM cakes JOIN users ON cakes.user_id = users.id WHERE cakes.price > 50 AND cakes.price <100 ORDER BY cakes.price ASC;"
       )
       .then((response) => {
         console.log(response.rows);
@@ -65,7 +65,7 @@ const getCakeInfo = (value) => {
     console.log("value is 3");
     return db
       .query(
-        "SELECT cakes.*, users.email FROM cakes JOIN users ON cakes.user_id = users.id WHERE cakes.price > 100 AND cakes.price < 150;"
+        "SELECT cakes.*, users.email FROM cakes JOIN users ON cakes.user_id = users.id WHERE cakes.price > 100 AND cakes.price < 150 ORDER BY cakes.price ASC;"
       )
       .then((response) => {
         console.log(response.rows);
@@ -78,7 +78,7 @@ const getCakeInfo = (value) => {
     console.log("value is 4 ");
     return db
       .query(
-        "SELECT cakes.*, users.email FROM cakes JOIN users ON cakes.user_id = users.id  WHERE cakes.price > 150;"
+        "SELECT cakes.*, users.email FROM cakes JOIN users ON cakes.user_id = users.id  WHERE cakes.price > 150 ORDER BY cakes.price ASC;"
       )
       .then((response) => {
         console.log(response.rows);
