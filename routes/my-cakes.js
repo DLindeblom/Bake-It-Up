@@ -1,5 +1,5 @@
 const express = require("express");
-const getFavCakes = require("../public/scripts/getFavCakes");
+const getMyCakes = require("../public/scripts/getMyCakes");
 const router = express.Router()
 
 
@@ -11,9 +11,10 @@ module.exports = (db) => {
     const userId = req.cookies.user_id
     // console.log(req.cookies)
 
-    getFavCakes(userId)
+    getMyCakes(userId)
       .then((result) => {
         const templateVars = {cakes: result}
+        console.log(templateVars)
         return res.render("seller-my-cakes", templateVars)
       })
       .catch((err) => {
