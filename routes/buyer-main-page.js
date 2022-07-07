@@ -2,6 +2,7 @@ const express = require("express");
 const router = express.Router();
 
 const getCakeInfo = require("../public/scripts/getCakeInfo");
+const addFavCake = require("../public/scripts/addFavCake");
 
 module.exports = (db) => {
   router.get("/", (req, res) => {

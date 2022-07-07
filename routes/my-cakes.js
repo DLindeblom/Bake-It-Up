@@ -9,12 +9,10 @@ module.exports = (db) => {
   router.get("/", (req, res) => {
 
     const userID = req.cookies.user_id
-    // console.log(req.cookies)
 
     getMyCakes(userID)
       .then((result) => {
         const templateVars = {cakes: result, userID}
-        console.log(templateVars)
         return res.render("seller-my-cakes", templateVars)
       })
       .catch((err) => {
