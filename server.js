@@ -44,8 +44,13 @@ const myCakes = require("./routes/my-cakes");
 const logout = require("./routes/logout");
 const deleteCake = require("./routes/delete");
 const updateCake = require("./routes/update-status");
+<<<<<<< HEAD
 const favPage = require("./routes/buyer-fav-page");
 const addFavCake = require("./routes/addFavCake")
+=======
+const addCake = require("./routes/addFavCake")
+const favCakes = require("./routes/buyer-fav-page");
+>>>>>>> fav-page
  // Mount all resource routes
 
 // Note: mount other resources here, using the same pattern aboves
@@ -58,11 +63,18 @@ app.use("/cakes", buyerPage(db));
 app.use("/form", cakeForm(db));
 app.use("/mycakes", myCakes(db));
 app.use("/logout", logout());
+<<<<<<< HEAD
 app.use("/delete", deleteCake());
 app.use("/update", updateCake());
 app.use("/favs", favPage(db));
 app.use("/fav", addFavCake())
 
+=======
+app.use("/delete", deleteCake())
+app.use("/update", updateCake())
+app.use("/favs", favCakes())
+app.use("/fav", addCake())
+>>>>>>> fav-page
 
 // Warning: avoid creating more routes in this file!
 // Separate them into separate routes files (see above).

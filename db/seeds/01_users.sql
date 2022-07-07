@@ -7,4 +7,15 @@ INSERT INTO users (name, email, password, seller) VALUES
 
 -- INSERT 1 BUYER
 INSERT INTO users (name, email, password) VALUES
+('Ricardo', 'ricardo@lhl.com', '123'),
+('Ricardo', 'ricardo@lhl.com', '123'),
+('Ricardo', 'ricardo@lhl.com', '123'),
+('Ricardo', 'ricardo@lhl.com', '123'),
+('Ricardo', 'ricardo@lhl.com', '123'),
+('Ricardo', 'ricardo@lhl.com', '123'),
+('Ricardo', 'ricardo@lhl.com', '123'),
+('Ricardo', 'ricardo@lhl.com', '123'),
+('Ricardo', 'ricardo@lhl.com', '123'),
+('Ricardo', 'ricardo@lhl.com', '123'),
+('Ricardo', 'ricardo@lhl.com', '123'),
 ('Ricardo', 'ricardo@lhl.com', '123');
