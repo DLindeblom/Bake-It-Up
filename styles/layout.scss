@@ -495,6 +495,8 @@ button.cake-status {
 button.cake-status:hover {
   background-size: 0 5px, 100% 5px;
 }
+
+// CHANGE COLOR OF THE CAKE STATUS TO RED
 button.cake-status {
   background: linear-gradient(to right, #401c0c, #401c0c),
     linear-gradient(
@@ -507,6 +509,19 @@ button.cake-status {
   background-position: 100% 100%, 0 100%;
   background-repeat: no-repeat;
   transition: background-size 400ms;
+}
+
+// STYLING FOR SOLD BUTTON ON SELLER PAGE//
+button#sold.cake-status.sold {
+  color: white;
+  font-size: 2rem;
+  font-weight: 900;
+  background-color: #f35f62;
+  border-radius: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 3rem;
 }
 
 div.status-contact {
