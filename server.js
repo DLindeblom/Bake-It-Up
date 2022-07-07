@@ -47,7 +47,7 @@ const myCakes = require("./routes/my-cakes");
 const logout = require("./routes/logout");
 const deleteCake = require("./routes/delete")
 const updateCake = require("./routes/update-status");
-const addCakes = require()
+const addCake = require("./routes/addFavCake")
 const favCakes = require("./routes/buyer-fav-page");
  // Mount all resource routes
 
@@ -64,6 +64,7 @@ app.use("/logout", logout());
 app.use("/delete", deleteCake())
 app.use("/update", updateCake())
 app.use("/favs", favCakes())
+app.use("/fav", addCake())
 
 // Warning: avoid creating more routes in this file!
 // Separate them into separate routes files (see above).
