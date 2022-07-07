@@ -10,6 +10,7 @@ const deleteCake = (cakeId) => {
     WHERE cakes.id =  $1`,
     [cakeId])
     .then((response) => {
+
       return response.rows;
     })
     .catch((err) => {

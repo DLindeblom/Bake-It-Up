@@ -10,7 +10,7 @@ module.exports = (db) => {
     getFavCakes(userID)
       .then((result) => {
         const templateVars = { cakes: result, userID };
-        console.log(templateVars)
+        console.log("these are my templatevars", templateVars)
         return res.render("buyer-fav-page", templateVars);
       });
   });

@@ -5,14 +5,15 @@ const db = require("./dbConnection");
 const getFavCakes = (id) => {
 
   return db.query(
-`   SELECT *
-    FROM fav_cakes
-      JOIN users ON fav_cakes.user_id = users.id
+`   SELECT *, fav_cakes.id as fav_cake_id
+    FROM users
+      JOIN fav_cakes ON fav_cakes.user_id = users.id
       JOIN cakes ON fav_cakes.cake_id = cakes.id
     WHERE users.id = $1`
     , [id])
 
     .then((response) => {
+      // console.log("inside get fav cakes function:", response.rows)
       return response.rows;
     })
     .catch((err) => {
