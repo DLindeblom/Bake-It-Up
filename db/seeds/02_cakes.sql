@@ -12,8 +12,6 @@ VALUES
 
 ( 2, 'https://www.indulgewithmimi.com/wp-content/uploads/2019/07/rainbow-mille-layer-crepe-cake-no-bake-1-735x735.jpg', 'Rainbow Crepe Cake'  , '30 layers of crepe rainbow cake, beautiful and yummy!',130 ),
 
-( 1,'https://previews.123rf.com/images/dolphytv/dolphytv1711/dolphytv171100001/90955371-sliced-no-bake-strawberry-cheesecake-decorated-with-fresh-berries-and-mint-square.jpg','Strawberry Cheesecake', 'Strawberry Cheesecake make with all fresh ingredient',90),
-
 ( 1, 'https://www.theflavorbender.com/wp-content/uploads/2020/02/Strawberry-cream-puffs-0261-2.jpg', 'Velvet Cream Puffs' , 'Fresh Strawberry croissant baked french toast', 43 ),
 
 ( 1,'https://truffle-assets.imgix.net/23c20579-s.png', 'Matcha Spiral Cake'  ,'Matcha cake made with the real import matcha powder from Japan',219),
