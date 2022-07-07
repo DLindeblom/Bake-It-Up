@@ -224,8 +224,8 @@ section {
 
   /* The image used */
   background: url(https://images.unsplash.com/photo-1559329374-a792174e7a1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-  filter: blur(1.5px);
-  -webkit-filter: blur(1.5px);
+  filter: blur(1.4px);
+  -webkit-filter: blur(1.4px);
 
   /* Full height */
   height: 100%;
@@ -254,7 +254,7 @@ h1 {
   display: flex;
   align-items: center;
   font-family: "Quicksand", sans-serif;
-  font-size: 4.3rem;
+  font-size: 4.5rem;
   display: flex;
   align-self: center;
 }
@@ -275,7 +275,7 @@ div.heading {
   padding-left: 2rem;
   padding-right: 2rem;
   background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.3); /* Black w/opacity/see-through */
+  background-color: rgba(0, 0, 0, 0.15); /* Black w/opacity/see-through */
 
   z-index: 5;
   width: 100%;
