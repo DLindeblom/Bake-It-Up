@@ -71,6 +71,10 @@
       <br>
     <% for (let cake in cakes) { %>
 
+  <!-- Function to remove the ! at the end of SOLD!
+      We use this to dynamic change the class of button without JS by inject data directly to a class of CSS-->
+      <% const magic = cakes[cake].cake_status.toLowerCase().replace(/!+$/, '') %>
+
       <!-- Each Cake Display -->
       <div class="display-wrap">
         <div class="cake-display">
@@ -100,10 +104,11 @@
              $<%= cakes[cake].price %>
             </p>
           </div>
-          <!-- CAKE STATUS AND CONTACT SELLER SECTION -->
-            <!-- cake_status -->
-          <div class="status-contact">
-            <button action="/fav" method="POST" class="cake-status"> <%= cakes[cake].cake_status %> </button>
+         <!-- cake_status AVAILABLE/SOLD-->
+      <div class="status-contact">
+        <form  action="/update/<%= cakes[cake].id %>" method="POST">
+          <button id="sold" name="cake-status" class="cake-status <%= magic %>"> <%= cakes[cake].cake_status %> </button>
+        </form>
 
             <!-- contact seller button -->
             <a href="mailto: <%= cakes[cake].email %>">
