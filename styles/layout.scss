@@ -9,7 +9,7 @@ html {
   top: 0;
   right: 0;
   left: 0;
-  background-color: #d6c6af;
+  background-color: #fef1df;
   background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
   display: flex;
   align-items: center;
@@ -224,8 +224,8 @@ section {
 
   /* The image used */
   background: url(https://images.unsplash.com/photo-1559329374-a792174e7a1e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
-  filter: blur(1.4px);
-  -webkit-filter: blur(1.4px);
+  filter: blur(1px);
+  -webkit-filter: blur(1px);
 
   /* Full height */
   height: 100%;
@@ -636,7 +636,7 @@ div.form-container {
 input {
   display: inline-block;
   width: 100%;
-  padding: 10px;
+  padding: 0px;
   box-sizing: border-box;
 }
 label {
