@@ -49,7 +49,7 @@
 
 
   <!-- Title and Favicon -->
-  <title>Cake It Up</title>
+  <title>Cake It Up - Admin Page</title>
   <link rel="icon" type="image/x-icon" href="images/favicon.png">
 
 
@@ -62,7 +62,8 @@
 <!-- SHOW ALL CAKES SECTION START HERE  -->
     <section class="cakes-container">
       <div class="heading">
-          <h1> Check Out All Of Our Cakes</h1>
+          <h1 id="admin-product-page">ADMIN PRODUCT PAGE </h1>
+
       </div>
       <br>
     <% for (let cake in cakes) { %>
@@ -93,6 +94,8 @@
             </p>
             <p class="price">
              $<%= cakes[cake].price %>
+
+
             </p>
 
           </div>
