@@ -12,7 +12,10 @@ module.exports = (db) => {
     getCakeInfo(value)
       .then((result) => {
         const userID = req.cookies.user_id;
-        const templateVars = { cakes: result, userID };
+        const templateVars = {
+          cakes: result,
+          userID
+        };
         return res.render("buyer-main-page", templateVars);
       })
       .catch((err) => {
