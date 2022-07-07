@@ -22,7 +22,7 @@ module.exports = (db) => {
       });
   });
 
-  router.get("/favs", (req, res) => {
+  router.get("/routes/favs", (req, res) => {
     res.render("buyer-fav-page", templateVars);
   });
 
