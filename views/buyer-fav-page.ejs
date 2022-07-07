@@ -65,22 +65,7 @@
           <h1>Check Out All Cakes</Out></h1>
 
 
-          <div class="collection-sort">
 
-            <p class="filter-by-prices">Filter By Prices</p>
-            <!-- Filter form -->
-            <form action="/cakes" method="GET">
-            <select name="filter" class="filter-by-prices" >
-              <option value="0">Display All</option>
-              <option value="1">Below $50</option>
-              <option value="2">$50 - $100</option>
-              <option value="3">$100 - $150</option>
-              <option value="4">Above $150</option>
-            </select>
-            <button class="submit-button" id="filter-button" type="submit">GO</button>
-          </form>
-
-          </div>
 
       </div>
       <br>
@@ -91,7 +76,7 @@
         <div class="cake-display">
           <div class="fav-icon">
             <!-- FAV BUTTON-HEART ICON -->
-            <form action="/favs/<%= cakes[cake].id %>" method="POST">
+            <form action="/remove/<%= cakes[cake].fav_cake_id %>" method="POST">
             <button  type="submit" class="fav-button">
             <i class="fa-solid fa-heart"></i>
             </button>

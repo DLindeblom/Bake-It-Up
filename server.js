@@ -11,7 +11,7 @@ const cookieParser = require("cookie-parser");
 const bodyParser = require("body-parser");
 
 // PG database client/connection setup
-const db = require("./public/scripts/dbConnection")
+const db = require("./public/scripts/dbConnection");
 
 
 
@@ -45,11 +45,13 @@ const cakeForm = require("./routes/sell-a-cake-form");
 const login = require("./routes/login");
 const myCakes = require("./routes/my-cakes");
 const logout = require("./routes/logout");
-const deleteCake = require("./routes/delete")
+const deleteCake = require("./routes/delete");
 const updateCake = require("./routes/update-status");
-const addCake = require("./routes/addFavCake")
+const addCake = require("./routes/addFavCake");
 const favCakes = require("./routes/buyer-fav-page");
- // Mount all resource routes
+const removeCake = require("./routes/remove-fav-cake");
+
+// Mount all resource routes
 
 // Note: mount other resources here, using the same pattern aboves
 
@@ -61,10 +63,11 @@ app.use("/cakes", buyerPage(db));
 app.use("/form", cakeForm(db));
 app.use("/mycakes", myCakes(db));
 app.use("/logout", logout());
-app.use("/delete", deleteCake())
-app.use("/update", updateCake())
-app.use("/favs", favCakes())
-app.use("/fav", addCake())
+app.use("/delete", deleteCake());
+app.use("/update", updateCake());
+app.use("/favs", favCakes());
+app.use("/fav", addCake());
+app.use("/remove", removeCake());
 
 // Warning: avoid creating more routes in this file!
 // Separate them into separate routes files (see above).
