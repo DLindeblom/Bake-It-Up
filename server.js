@@ -37,16 +37,15 @@ app.use(
 
 app.use(express.static("public"));
 
-// Separated Routes for each Resource
-
-const homePage = require("./routes/main-page");
-const buyerPage = require("./routes/buyer-main-page");
+// Separated Routes forakese("./routes/buyer-main-page");
 const cakeForm = require("./routes/sell-a-cake-form");
 const login = require("./routes/login");
 const myCakes = require("./routes/my-cakes");
 const logout = require("./routes/logout");
-const deleteCake = require("./routes/delete")
+const deleteCake = require("./routes/delete");
 const updateCake = require("./routes/update-status");
+const favPage = require("./routes/buyer-fav-page");
+const addFavCake = require("./routes/addFavCake")
  // Mount all resource routes
 
 // Note: mount other resources here, using the same pattern aboves
@@ -59,8 +58,11 @@ app.use("/cakes", buyerPage(db));
 app.use("/form", cakeForm(db));
 app.use("/mycakes", myCakes(db));
 app.use("/logout", logout());
-app.use("/delete", deleteCake())
-app.use("/update", updateCake())
+app.use("/delete", deleteCake());
+app.use("/update", updateCake());
+app.use("/favs", favPage(db));
+app.use("/fav", addFavCake())
+
 
 // Warning: avoid creating more routes in this file!
 // Separate them into separate routes files (see above).
