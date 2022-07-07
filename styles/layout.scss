@@ -275,7 +275,7 @@ div.heading {
   padding-left: 2rem;
   padding-right: 2rem;
   background-color: rgb(0, 0, 0); /* Fallback color */
-  background-color: rgba(0, 0, 0, 0.15); /* Black w/opacity/see-through */
+  background-color: rgba(0, 0, 0, 0.25); /* Black w/opacity/see-through */
 
   z-index: 5;
   width: 100%;
@@ -477,10 +477,22 @@ p.price {
   color: #d988a7;
 }
 
+.fa-rectangle-xmark {
+  font-size: 55px;
+  color: #5985ca;
+}
+.fa-rectangle-xmark:hover {
+  font-size: 60px;
+  color: #f35f62;
+}
+
 form.contact-seller {
   margin-right: 5px;
 }
 
+h1#buyer-fav {
+  padding-left: 60rem;
+}
 // SORT BY FILTER FEATURE
 .collection-sort {
   display: flex;
@@ -512,7 +524,7 @@ button.fav-button {
   border: none;
 }
 
-#admin-product-page {
+h1#admin-product-page {
   padding-left: 59rem;
 }
 
