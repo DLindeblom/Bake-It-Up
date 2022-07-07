@@ -4,17 +4,6 @@ const router = express.Router();
 
 module.exports = (db) => {
   router.get("/", (req, res) => {
-<<<<<<< HEAD
-    const userID = req.cookies.user_id;
-    
-    // console.log(req.cookies)
-
-    getMyCakes(userID)
-      .then((result) => {
-        const templateVars = { cakes: result, userID };
-        // console.log(templateVars);
-        return res.render("seller-main-page", templateVars);
-=======
 
     const userID = req.cookies.user_id
 
@@ -22,7 +11,6 @@ module.exports = (db) => {
       .then((result) => {
         const templateVars = {cakes: result, userID}
         return res.render("seller-my-cakes", templateVars)
->>>>>>> fav-page
       })
       .catch((err) => {
         console.log(err);
