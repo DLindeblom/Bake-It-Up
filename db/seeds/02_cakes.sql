@@ -34,7 +34,7 @@ VALUES
 
 ( 1,'https://letthebakingbegin.com/wp-content/uploads/2013/07/The-Best-Napoleon-Cake-is-made-with-thin-puff-pastry-layers-then-sandwiched-with-rich-and-buttery-custard.-This-Napoleon-dessert-is-one-of-my-familys-favorite-2-500x500.jpg','Napoleon Cake', 'Napoleon cake layered with almond paste instead of cream.',49.8),
 
-( 1,'https://826242.smushcdn.com/1643412/wp-content/uploads/2020/01/Mexcian-Hot-Chocolate-Macarons-2-4.jpg?size=1200x1212&lossy=1&strip=1&webp=1', 'Macarons Marshmallow'  ,'he balance between sweet and nutty will determine the goodness of a macaron',93),
+( 1,'https://826242.smushcdn.com/1643412/wp-content/uploads/2020/01/Mexcian-Hot-Chocolate-Macarons-2-4.jpg?size=1200x1212&lossy=1&strip=1&webp=1', 'Macarons Marshmallow'  ,'A smooth, crisp shell and a moist, chewy interior.',93),
 
 ( 1, 'https://images.summitmedia-digital.com/spotph/images/2021/11/26/1-1637894525.jpg', 'Floral Birthday Cake'  , 'Elegant and beautiful floral birthday cake with my fresh fruits',230 ),
 
@@ -48,13 +48,13 @@ VALUES
 
 ( 1, 'https://www.itakeyou.co.uk/wp-content/uploads/2021/10/minimalist-cake.jpg', 'Large Customize Cake'  , 'Customize birthday cake made by order', 290 ),
 
-( 2, 'https://images.getrecipekit.com/20220504184633-rwbbundtcake.png?aspect_ratio=1:1&quality=90&', 'Fruity Pound Cake:'  , 'Fruity Pound cake made with blueberry and strawberry',40 ),
+( 2, 'https://images.getrecipekit.com/20220504184633-rwbbundtcake.png?aspect_ratio=1:1&quality=90&', 'Fruity Pound Cake'  , 'Fruity Pound cake made with blueberry and strawberry',40 ),
 
 ( 2, 'https://www.rainbownourishments.com/wp-content/uploads/2021/06/vegan-whole-orange-cake-1-1-500x500.jpg', 'Orange Cake', 'Orange Cake with powder sugar on top with fresh orange jam',60 ),
 
 ( 2,'https://letthebakingbegin.com/wp-content/uploads/2013/07/The-Best-Napoleon-Cake-is-made-with-thin-puff-pastry-layers-then-sandwiched-with-rich-and-buttery-custard.-This-Napoleon-dessert-is-one-of-my-familys-favorite-2-500x500.jpg','Napoleon Cake', 'Napoleon cake layered with almond paste instead of cream.',70),
 
-( 2,'https://826242.smushcdn.com/1643412/wp-content/uploads/2020/01/Mexcian-Hot-Chocolate-Macarons-2-4.jpg?size=1200x1212&lossy=1&strip=1&webp=1', 'Macarons Marshmallow'  ,'he balance between sweet and nutty will determine the goodness of a macaron',102),
+( 2,'https://826242.smushcdn.com/1643412/wp-content/uploads/2020/01/Mexcian-Hot-Chocolate-Macarons-2-4.jpg?size=1200x1212&lossy=1&strip=1&webp=1', 'Macarons Marshmallow'  ,'A smooth, crisp shell and a moist, chewy interior.',102),
 
 ( 2, 'https://images.summitmedia-digital.com/spotph/images/2021/11/26/1-1637894525.jpg', 'Floral Birthday Cake'  , 'Elegant and beautiful floral birthday cake with my fresh fruits',230 ),
 
