@@ -1,5 +1,5 @@
 const express = require("express");
-const deleteCake = require("../public/scripts/app");
+const deleteCake = require("../public/scripts/deleteCake");
 const router = express.Router();
 
 module.exports = (db) => {
