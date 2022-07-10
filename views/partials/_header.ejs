@@ -16,15 +16,15 @@
     <!----- SELLER/ADMIN LOGGED_IN ----->
     <%} if (userID < 10) { %>
 
-    <a href="/mycakes">My Cakes</a>
-    <a href="/form">Sell A Cake</a>
+    <a href="/mycakes">My Products</a>
+    <a href="/form">Sell A Product</a>
     <a href="/">Sign Out</a>
     <i class="fa-solid fa-lock"></i>
 
     <!----- BUYER/USER LOGGED_IN ----->
     <%} if (userID > 10) { %>
 
-    <a href="/cakes">All Cakes</a>
+    <a href="/cakes">All Goodies</a>
     <a href="/favs">My Favorites</a>
     <a href="/">Sign Out</a>
     <i class="fa-solid fa-user"></i>
