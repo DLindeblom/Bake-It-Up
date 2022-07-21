@@ -1,6 +1,5 @@
 # Midterm Project: Bake It Up 🎂🍪🍰
 
-
 Bake-It-Up is an app where you can put baked goods for sale. Via Bake-It-Up, buyers can find the items they are looking for quickly, and easily contact sellers.
 
 ## Contributors:
@@ -89,21 +88,22 @@ Bake-It-Up is an app where you can put baked goods for sale. Via Bake-It-Up, buy
 2. Create the `.env` by using `.env.example` as a reference: `cp .env.example .env`
 3. Update the .env file with your correct local information
 
-    - username: `labber`
-    - password: `labber`
-    - database: `midterm`
+   - username: `labber`
+   - password: `labber`
+   - database: `midterm`
 
 4. Install dependencies: `npm i`
 5. Fix to binaries for sass: `npm rebuild node-sass`
 6. Reset database: `npm run db:reset`
 
-    - Check the db folder to see what gets created and seeded in the SDB
+   - Check the db folder to see what gets created and seeded in the SDB
 
 7. Run the server: `npm run local`
 
-    - Note: nodemon is used, so you should not have to restart your server
+   - Note: nodemon is used, so you should not have to restart your server
 
 8. Visit `http://localhost:8080/`
 9. Start to sell or buy your baked goodies. LET;S BAKE IT UP!!!
 
+<br>
 > **Hope you enjoy the app and have a nice day :D**
