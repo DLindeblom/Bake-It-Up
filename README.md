@@ -42,11 +42,15 @@ Bake-It-Up is an app where you can put baked goods for sale. Via Bake-It-Up, buy
 
 #### _Landing Page_
 
-!["Landing Page"](https://github.com/thaian161/Bake-It-Up/blob/master/docs/admin-form.png)
+!["Landing Page"](https://github.com/thaian161/Bake-It-Up/blob/master/docs/BIU-landing.pngg)
 
 #### _Users Favorites Page_
 
 !["Users Favorites Page"](https://github.com/thaian161/Bake-It-Up/blob/master/docs/fav.png)
+
+#### _Users Main Page_
+
+!["Users Main Page"](https://github.com/thaian161/Bake-It-Up/blob/master/docs/buyer%20main.png)
 
 #### _Filter Feature_
 
@@ -54,7 +58,7 @@ Bake-It-Up is an app where you can put baked goods for sale. Via Bake-It-Up, buy
 
 #### _Admins Main Page_
 
-!["Admin Main Page"]()
+!["Admin Main Page"](https://github.com/thaian161/Bake-It-Up/blob/master/docs/admin-main.png)
 
 #### _Admins Sell Baked Good Form_
 
