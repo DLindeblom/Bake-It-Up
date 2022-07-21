@@ -1,53 +1,56 @@
 # Midterm Project at LHL: Bake It Up
--------------------------------
-Bake-It-Up is an app where you can put baked goods for sale. Via Bake-It-Up, buyers  can find the items they are looking for quickly, and easily contact sellers.
 
-## Contributors: 
+---
+
+Bake-It-Up is an app where you can put baked goods for sale. Via Bake-It-Up, buyers can find the items they are looking for quickly, and easily contact sellers.
+
+## Contributors:
+
 - 👨🏼‍💻 [Dan Lindeblom](https://github.com/DLindeblom): the master of backend and data manipulater
 - 👩🏻‍🎨 [Ann Bui](https://github.com/thaian161): the frontend lover and amateur UX/UI designer
 
 ## Entity Relationship Diagram (ERD)
-!["ERD"]()
+
+!["ERD"](https://github.com/thaian161/Bake-It-Up/blob/master/docs/bake-it-up-ERD.png)
 
 ## Main Features:
 
 ### Admins/Sellers 🔐:
+
 - post items, which can be seen by others
 - remove items from the site
 - mark items as SOLD!,
 - send a message via app, email, or text back on negotiations in buying the said item
 
 ### Buyers 💁🏻‍♀️🙆🏻‍♂️:
+
 - buyers can see featured items on a main feed
 - buyers can filter items by price,
 - buyers can favourite items to check up on them later
 - buyers can send messages to the user that is listing the item
 
 ## Features we wish to accomplish:
+
 - In-app messaging
 - Using express-fileupload to upload photo file directly to app
-- Using Ajax to updates info  asynchronously without reloading the whole page.
+- Using Ajax to updates info asynchronously without reloading the whole page.
 - Register, Log-In page
 
 ## Final Product
 
-### [👋 Watch Live Demo Here 👋](https://youtu.be/x8zQIm24-B8)
+### [👋 Watch Live Demo Here 👋]()
 
 #### _Landing Page_
 
-!["Landing Page"]()
-
-#### _Users Main Page_
-
-!["Users Main Page"]()
+!["Landing Page"](https://github.com/thaian161/Bake-It-Up/blob/master/docs/BIU-landing.png)
 
 #### _Users Favorites Page_
 
-!["Users Favorites Page"]()
+!["Users Favorites Page"](https://github.com/thaian161/Bake-It-Up/blob/master/docs/fav.png)
 
 #### _Filter Feature_
 
-!["Filter Feature"]()
+!["Filter Feature"](https://github.com/thaian161/Bake-It-Up/blob/master/docs/filter.png)
 
 #### _Admins Main Page_
 
@@ -55,11 +58,11 @@ Bake-It-Up is an app where you can put baked goods for sale. Via Bake-It-Up, buy
 
 #### _Admins Sell Baked Good Form_
 
-!["Admin Main Page"]()
+!["Admin Main Page"](https://github.com/thaian161/Bake-It-Up/blob/master/docs/admin-form.png)
 
 #### _Admins SOLD feature_
 
-!["Admin Main Page"]()
+!["Admin Main Page"](https://github.com/thaian161/Bake-It-Up/blob/master/docs/SOLD%20feature.png)
 
 ## Dependencies
 
@@ -77,21 +80,26 @@ Bake-It-Up is an app where you can put baked goods for sale. Via Bake-It-Up, buy
 
 - nodemon
 
-
 ## Getting Started
 
 1. Clone this repos.
 2. Create the `.env` by using `.env.example` as a reference: `cp .env.example .env`
-3. Update the .env file with your correct local information 
-  - username: `labber` 
-  - password: `labber` 
-  - database: `midterm`
+3. Update the .env file with your correct local information
+
+- username: `labber`
+- password: `labber`
+- database: `midterm`
+
 4. Install dependencies: `npm i`
 5. Fix to binaries for sass: `npm rebuild node-sass`
 6. Reset database: `npm run db:reset`
-  - Check the db folder to see what gets created and seeded in the SDB
+
+- Check the db folder to see what gets created and seeded in the SDB
+
 7. Run the server: `npm run local`
-  - Note: nodemon is used, so you should not have to restart your server
+
+- Note: nodemon is used, so you should not have to restart your server
+
 8. Visit `http://localhost:8080/`
 9. Start to sell or buy your bake goodies
 
