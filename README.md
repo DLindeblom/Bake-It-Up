@@ -106,4 +106,5 @@ Bake-It-Up is an app where you can put baked goods for sale. Via Bake-It-Up, buy
 9. Start to sell or buy your baked goodies. LET;S BAKE IT UP!!!
 
 <br>
+
 > **Hope you enjoy the app and have a nice day :D**
