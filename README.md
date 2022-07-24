@@ -1,6 +1,6 @@
 # Midterm Project: Bake It Up 🎂🍪🍰
 
-Bake-It-Up is an app where you can put baked goods for sale. Via Bake-It-Up, buyers can find the items they are looking for quickly, and easily contact sellers.
+Bake-It-Up is an E-commerce app where you can put baked goods for sale. Via Bake-It-Up, buyers can find the items they are looking for quickly, and easily contact sellers.
 
 ## Contributors:
 
