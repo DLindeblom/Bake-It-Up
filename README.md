@@ -103,7 +103,7 @@ Bake-It-Up is an E-commerce app where you can put baked goods for sale. Via Bake
    - Note: nodemon is used, so you should not have to restart your server
 
 8. Visit `http://localhost:8080/`
-9. Start to sell or buy your baked goodies. LET;S BAKE IT UP!!!
+9. Start to sell or buy your baked goodies. LET'S BAKE IT UP!!!
 
 <br>
 
